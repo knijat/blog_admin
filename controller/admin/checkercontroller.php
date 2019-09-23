@@ -20,7 +20,7 @@ class checkercontroller
                 $_SESSION['user'] = $data['data'];
                 $user=$_SESSION['user']['id_writer']==1 ? 'admin' : 'writer';
 
-                $this->redirectni(array('admin',$user,'profile'));
+                $this->redirectni(array('admin',$user,'login'));
             }
             else{$this->redirectni(array('admin','checker','default'));}
         }else if($data['result']=='blocked'){
@@ -62,7 +62,7 @@ class checkercontroller
         {
             $user=$_SESSION['user']['id_writer']==1 ? 'admin' : 'writer';
 
-            $this->redirectni(array('admin',$user,'profile'));
+            $this->redirectni(array('admin',$user,'login'));
 
         }
     }
