@@ -32,6 +32,8 @@ class controller{
 //app run from here
         public function run($url)
         {
+
+
             $cont=$url['get'][0].'controller';
             $ni=$url['get'][1].'ni';
 
@@ -76,7 +78,8 @@ class controller{
 
         public function redirect()
         {
-            header('location:http://localhost/admin_panel');
+
+            header('location:http://localhost/blog_admin_git/?admin=checker/default');
         }
 }
 

@@ -77,6 +77,6 @@ class checkercontroller
     public function redirectni($url,$result=null)
     {
 
-        header('location:http://localhost/admin_panel/?'.$url[0].'='.$url[1].'/'.$url[2].$result);
+        header('location:http://localhost/blog_admin_git/?'.$url[0].'='.$url[1].'/'.$url[2].$result);
     }
 }

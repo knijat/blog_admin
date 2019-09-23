@@ -23,10 +23,10 @@
   </div>';}?>
         </div>
         <div class="col-md-2" style="padding-left:0px;">
-            <a href="http://localhost/admin_panel/?admin=admin/main"> <button type="button" selected class="btn btn<?php if($data['page'][1]=='main'){echo '';}else{echo '-outline';}?>-dark">Main menu</button></a><br>
-            <a href="http://localhost/admin_panel/?admin=admin/newest"> <button type="button" class="btn btn<?php if($data['page'][1]=='newest'){echo '';}else{echo '-outline';}?>-dark">Newest</button></a><br>
-            <a href="http://localhost/admin_panel/?admin=admin/get_writers"> <button type="button" class="btn btn<?php if($data['page'][1]=='get_writers'){echo '';}else{echo '-outline';}?>-dark">Writers</button></a><br>
-            <a href="http://localhost/admin_panel/?admin=admin/get_articles"> <button type="button" class="btn btn<?php  if($data['page'][1]=='get_articles'){echo '';}else{echo '-outline';}?>-dark">Articles</button></a><br>
-            <a href="http://localhost/admin_panel/?admin=checker/unset"><button type="button" class="btn btn-outline-dark">Log out</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=admin/main"> <button type="button" selected class="btn btn<?php if($data['page'][1]=='main'){echo '';}else{echo '-outline';}?>-dark">Main menu</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=admin/newest"> <button type="button" class="btn btn<?php if($data['page'][1]=='newest'){echo '';}else{echo '-outline';}?>-dark">Newest</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=admin/get_writers"> <button type="button" class="btn btn<?php if($data['page'][1]=='get_writers'){echo '';}else{echo '-outline';}?>-dark">Writers</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=admin/get_articles"> <button type="button" class="btn btn<?php  if($data['page'][1]=='get_articles'){echo '';}else{echo '-outline';}?>-dark">Articles</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=checker/unset"><button type="button" class="btn btn-outline-dark">Log out</button></a><br>
         </div>
         <div class="col-md-10" style="border-left:1px solid black;">

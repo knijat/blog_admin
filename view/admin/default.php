@@ -24,7 +24,7 @@
     <strong>User name or password is not exist! </strong> Please check the username and password!
   </div>';}?>
             <!-- Login Form -->
-            <form action="http://localhost/admin_panel/?admin=checker/check_login" method="POST">
+            <form action="http://localhost/blog_admin_git/?admin=checker/check_login" method="POST">
                 <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
                 <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
                 <input type="submit" class="fadeIn fourth" value="Log In">

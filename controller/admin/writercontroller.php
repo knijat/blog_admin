@@ -77,7 +77,7 @@ class writercontroller
     //all redirect from here
     public function redirectni($url,$success=null)
     {
-        header('location:http://localhost/admin_panel/?'.$url[0].'='.$url[1].'/'.$url[2].$success);
+        header('location:http://localhost/blog_admin_git/?'.$url[0].'='.$url[1].'/'.$url[2].$success);
     }
 //get all articles,writers
     public function get_my_articlesni($url)
