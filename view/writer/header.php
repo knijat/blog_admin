@@ -24,11 +24,11 @@
   </div>';}?>
         </div>
         <div class="col-md-2" style="padding-left:0px;">
-            <a href="http://localhost/admin_panel/?admin=writer/profile"> <button type="button" selected class="btn btn<?php if($data['page'][1]=='profile'){echo '';}else{echo '-outline';}?>-dark">My Profile</button></a><br>
-            <a href="http://localhost/admin_panel/?admin=writer/get_my_articles"> <button type="button" class="btn btn<?php if($data['page'][1]=='get_my_articles'){echo '';}else{echo '-outline';}?>-dark">My articles</button></a><br>
-            <a href="http://localhost/admin_panel/?admin=writer/new_article"> <button type="button" class="btn btn<?php if($data['page'][1]=='new_article'){echo '';}else{echo '-outline';}?>-dark">New article</button></a><br>
-            <a href="http://localhost/admin_panel/?admin=writer/setting"> <button type="button" class="btn btn<?php  if($data['page'][1]=='setting'){echo '';}else{echo '-outline';}?>-dark">Setting</button></a><br>
-            <a href="http://localhost/admin_panel/?admin=checker/unset"><button type="button" class="btn btn-outline-dark">Log out</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=writer/profile"> <button type="button" selected class="btn btn<?php if($data['page'][1]=='profile'){echo '';}else{echo '-outline';}?>-dark">My Profile</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=writer/get_my_articles"> <button type="button" class="btn btn<?php if($data['page'][1]=='get_my_articles'){echo '';}else{echo '-outline';}?>-dark">My articles</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=writer/new_article"> <button type="button" class="btn btn<?php if($data['page'][1]=='new_article'){echo '';}else{echo '-outline';}?>-dark">New article</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=writer/setting"> <button type="button" class="btn btn<?php  if($data['page'][1]=='setting'){echo '';}else{echo '-outline';}?>-dark">Setting</button></a><br>
+            <a href="http://localhost/blog_admin_git/?admin=checker/unset"><button type="button" class="btn btn-outline-dark">Log out</button></a><br>
         </div>
 
         <div class="col-md-10" style="border-left:1px solid black;">

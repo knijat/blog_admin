@@ -27,8 +27,8 @@ if(!empty($data['data']))
                 <td><?= $datas['count_article'] ; ?></td>
                 <td><?= $datas['email'] ; ?></td>
                 <td><?= $datas['last_seen'] ; ?></td>
-                <td><a href="http://localhost/admin_panel/?admin=admin/get_writers/block/<?php if($datas['block']){echo'0/'.$datas['id_writer'].'"';}else{echo '1/'.$datas['id_writer'].'"';}?>"><?php if($datas['block']==1){echo '<button type="button" class="btn btn-outline-danger btn-sm">Unblock</button>';}else{echo '<button type="button" class="btn btn-outline-danger btn-sm">Block</button>';}?></a><br></td>
-                <td><a href="http://localhost/admin_panel/?admin=admin/get_writers/delete_w/<?= $datas['id_writer'];?>"><button type="button" class="btn btn-outline-danger btn-sm">Delete</button></a><br></td>
+                <td><a href="http://localhost/blog_admin_git/?admin=admin/get_writers/block/<?php if($datas['block']){echo'0/'.$datas['id_writer'].'"';}else{echo '1/'.$datas['id_writer'].'"';}?>"><?php if($datas['block']==1){echo '<button type="button" class="btn btn-outline-danger btn-sm">Unblock</button>';}else{echo '<button type="button" class="btn btn-outline-danger btn-sm">Block</button>';}?></a><br></td>
+                <td><a href="http://localhost/blog_admin_git/?admin=admin/get_writers/delete_w/<?= $datas['id_writer'];?>"><button type="button" class="btn btn-outline-danger btn-sm">Delete</button></a><br></td>
                 <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a<?= $datas['id_writer'];?>">Open modal</button></td>
 
             </tr>
@@ -50,8 +50,8 @@ if(!empty($data['data']))
                     <div class="modal-footer">
 
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        <a href="http://localhost/admin_panel/?admin=admin/get_writers/block/<?php if($datas['block']){echo'0/'.$datas['id_writer'].'"';}else{echo '1/'.$datas['id_writer'].'"';}?>"><?php if($datas['block']==1){echo '<button type="button" class="btn btn-outline-danger btn-sm">Unblock</button>';}else{echo '<button type="button" class="btn btn-outline-danger btn-sm">Block</button>';}?></a>
-                        <a href="http://localhost/admin_panel/?admin=admin/get_writers/delete_w/<?= $datas['id_writer'];?>"><button type="button" class="btn btn-outline-danger btn-sm">Delete</button></a>
+                        <a href="http://localhost/blog_admin_git/?admin=admin/get_writers/block/<?php if($datas['block']){echo'0/'.$datas['id_writer'].'"';}else{echo '1/'.$datas['id_writer'].'"';}?>"><?php if($datas['block']==1){echo '<button type="button" class="btn btn-outline-danger btn-sm">Unblock</button>';}else{echo '<button type="button" class="btn btn-outline-danger btn-sm">Block</button>';}?></a>
+                        <a href="http://localhost/blog_admin_git/?admin=admin/get_writers/delete_w/<?= $datas['id_writer'];?>"><button type="button" class="btn btn-outline-danger btn-sm">Delete</button></a>
                     </div>
 
                 </div>
