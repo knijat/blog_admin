@@ -63,7 +63,7 @@ class checkercontroller
 
             $user=$_SESSION['user']['id_writer']==1 ? 'admin' : 'writer';
 
-            $this->redirectni(array('admin',$user,'profile'));
+            $this->redirectni(array('admin',$user,'login'));
 
         }
     }

@@ -8,7 +8,7 @@
 
 
 
-class controller{
+class controller implements ControllerCo {
 
     public $nicat;
     public function __construct()
@@ -20,42 +20,29 @@ class controller{
             $url['get']=array('checker','default');
         }
 
-
        if($_SERVER['REQUEST_METHOD']=='POST'){
             $url['post']=$_POST;}
-
-
             $this->nicat=$url;
-
-
         }
 //app run from here
         public function run($url)
         {
-
-
-
             $cont=$url['get'][0].'controller';
             $ni=$url['get'][1].'ni';
 
 //check the files exist or not
-
-
             if(file_exists(cont_dir.'/admin/'.$cont.'.php')){
 
                 require cont_dir.'/admin/'.$cont.'.php';
 //check the class exist or not
                if(class_exists($cont))
                {
-
                     $get_class = new $cont();
-
 
 //check the method exist or not
 
                    if(method_exists($get_class,$ni))
                    {
-
                        $data=$get_class->$ni($url);
 
 // TODO burda yaxsi yoxlamayaiq;
@@ -79,10 +66,13 @@ class controller{
 
         public function redirect()
         {
-
             header('location:'.root_dir.'?admin=checker/default');
         }
 
+        public function checkUrl($url)
+        {
+            // TODO: Implement checkUrl() method.
+        }
 
 }
 
