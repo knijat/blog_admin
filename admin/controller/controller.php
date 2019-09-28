@@ -11,19 +11,12 @@
 class controller implements ControllerCo {
 
     public $nicat;
+
+
     public function __construct()
     {
-        if(!empty($_GET) && isset($_GET))
-        {
-            $url['get']=isset($_GET['admin']) ? explode('/',$_GET['admin']):explode('/',$_GET['blog']);
-        }else{
-            $url['get']=array('checker','default');
-        }
-
-       if($_SERVER['REQUEST_METHOD']=='POST'){
-            $url['post']=$_POST;}
-            $this->nicat=$url;
-        }
+        $this->checkUrl($_SERVER['QUERY_STRING']);
+    }
 //app run from here
         public function run($url)
         {
@@ -69,13 +62,62 @@ class controller implements ControllerCo {
             header('location:'.root_dir.'?admin=checker/default');
         }
 
-        public function checkUrl($url)
+        public function checkUrl($url_data)
         {
-            // TODO: Implement checkUrl() method.
+            //Get all url from here and modify it as want.
+
+
+            $entered_url=explode('=',$url_data);
+            $a=$entered_url[0];
+            $data=explode('/',$entered_url[1]);
+
+            array_unshift($data,$a);
+
+            $valid_data=$this->validation($data);
+
+
+
+
+//            if(!empty($_GET) && isset($_GET))
+//            {
+//                $url['get']=isset($_GET['admin']) ? explode('/',$_GET['admin']):explode('/',$_GET['blog']);
+//            }else{
+//                $url['get']=array('checker','default');
+//            }
+//
+//            if($_SERVER['REQUEST_METHOD']=='POST'){
+//                $url['post']=$_POST;}
+//            $this->nicat=$url;
         }
+
+
+        public function validation($url)
+        {
+
+            foreach ($url as $key => $url_d){
+
+
+                    $data= preg_replace('/[^a-zA-Z0-9_ -]/s','',$url_d);
+                    $data = trim($data);
+                     $data = stripslashes($data);
+                    $data = htmlspecialchars($data);
+
+                    if($key==0){
+                        $data=$data.'controller';
+                    }else if($key=1){
+                        $data=$data.'ni';
+                    }
+
+                    $url[$key]=$data;
+                }
+
+            return $url;
+        }
+
+
 
 }
 
 $n=new controller();
-$m=$n->run($n->nicat);
+
 
