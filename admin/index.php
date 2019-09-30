@@ -11,6 +11,7 @@ define('view_dir',root_dir.'/view/');
 //all files are required
 require(mod_dir.'model.php');
 require(root_dir.'/../vendor/autoload.php');
+require(root_dir.'/classes/back.php');
 
 require (cont_dir.'controller.php');
 
